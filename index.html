@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="ko" data-theme="bumblebee">
+<head>
+	<!-- 메타 태그 및 제목 -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>성숙자반 - 복(福)</title>
+
+	<!-- Google Fonts - Noto Sans KR -->
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+
+	<!-- Tailwind CSS 및 DaisyUI -->
+	<script src="https://cdn.tailwindcss.com"></script>
+	<link href="https://cdn.jsdelivr.net/npm/daisyui@2.26.0/dist/full.css" rel="stylesheet" type="text/css" />
+
+	<style>
+      /* 한글 폰트 적용 */
+      body {
+          font-family: 'Noto Sans KR', sans-serif;
+      }
+
+      /* 블록 인용문 애니메이션 (필요 시 사용) */
+      .fade {
+          transition: opacity 1.5s ease, max-height 0.5s ease;
+          opacity: 1;
+          max-height: 1000px;
+          overflow: hidden;
+      }
+
+      .fade-hidden {
+          opacity: 0;
+          max-height: 0;
+          margin-bottom: 0 !important;
+          padding-bottom: 0 !important;
+      }
+	</style>
+</head>
+
+<body class="font-sans text-base-content bg-base-200 p-6">
+<div class="max-w-4xl mx-auto space-y-8">
+	<!-- 헤더: 제목과 다크모드 토글 -->
+	<div class="flex justify-between items-center bg-base-100 rounded-lg shadow-xl p-6">
+		<h1 class="text-3xl font-bold text-center">성숙자반 - 복(福)</h1>
+		<label class="swap swap-rotate">
+			<!-- 토글 컨트롤 -->
+			<input type="checkbox" onclick="toggleTheme()" />
+			<!-- sun icon -->
+			<svg class="swap-on h-10 w-10 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+				<path
+					d="M5.64,17l-.71.71a1,1,0,0,0,0,1.41,1,1,0,0,0,1.41,0l.71-.71A1,1,0,0,0,5.64,17ZM5,12a1,1,0,0,0-1-1H3a1,1,0,0,0,0,2H4A1,1,0,0,0,5,12Zm7-7a1,1,0,0,0,1-1V3a1,1,0,0,0-2,0V4A1,1,0,0,0,12,5ZM5.64,7.05a1,1,0,0,0,.7.29,1,1,0,0,0,.71-.29,1,1,0,0,0,0-1.41l-.71-.71A1,1,0,0,0,4.93,6.34Zm12,.29a1,1,0,0,0,.7-.29l.71-.71a1,1,0,1,0-1.41-1.41L17,5.64a1,1,0,0,0,0,1.41A1,1,0,0,0,17.66,7.34ZM21,11H20a1,1,0,0,0,0,2h1a1,1,0,0,0,0-2Zm-9,8a1,1,0,0,0-1,1v1a1,1,0,0,0,2,0V20A1,1,0,0,0,12,19ZM18.36,17A1,1,0,0,0,17,18.36l.71.71a1,1,0,0,0,1.41,0,1,1,0,0,0,0-1.41ZM12,6.5A5.5,5.5,0,1,0,17.5,12,5.51,5.51,0,0,0,12,6.5Zm0,9A3.5,3.5,0,1,1,15.5,12,3.5,3.5,0,0,1,12,15.5Z" />
+			</svg>
+			<!-- moon icon -->
+			<svg class="swap-off h-10 w-10 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+				<path
+					d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Z" />
+			</svg>
+		</label>
+	</div>
+
+	<!-- 카드: 복과 축복 -->
+	<div class="card bg-base-100 shadow-xl rounded-lg p-6">
+		<h2 class="text-2xl md:text-3xl font-semibold mb-6 border-b pb-2 text-center">복과 축복</h2>
+		<!-- 복과 축복 -->
+		<section class="mb-8">
+			<h3 class="text-xl md:text-2xl font-semibold mb-2 text-center">복</h3>
+			<p class="mb-4 pl-4 leading-relaxed">
+				복은 하나님이 인간에게 주시는 애프터서비스이다. (새신자반에서 다루었다)<br>
+				복을 사모해야 하나, 복 자체를 목적으로 삼으면 안 되며 이 경우가 기복주의이다.
+				그리스도인이 복을 사모해야 하는 이유는 하나님 복 안에서만 하나님을 목적으로 삼는 사람다운 삶을 살 수 있기 때문이다.
+			</p>
+			<h3 class="text-xl md:text-2xl font-semibold mb-2 text-center">축복</h3>
+			<p class="mb-4 pl-4 leading-relaxed">
+				하나님의 복을 빌어 달라는 뜻으로, 사람과 사람 사이의 관계에서만 사용해야 한다.
+				하나님께 복을 구할 때에는 복을 내려 달라고 기도해야 한다.
+			</p>
+		</section>
+	</div>
+
+	<!-- 카드: 복의 문자적 의미 -->
+	<div class="card bg-base-100 shadow-xl rounded-lg p-6">
+		<h2 class="text-2xl md:text-3xl font-semibold mb-6 border-b pb-2 text-center">복의 문자적 의미</h2>
+		<!-- 창대함 · 번영 -->
+		<section class="mb-8">
+			<h3 class="text-xl md:text-2xl font-semibold mb-2 text-center">창대함 · 번영</h3>
+			<blockquote class="border-l-4 border-primary pl-4 mb-4 italic">
+				"내가 너로 큰 민족을 이루고 네게 복을 주어 네 이름을 창대하게 하리니 너는 복이 될지라" (창 12:2)
+			</blockquote>
+			<p class="mb-4 pl-4 leading-relaxed">
+				역사 속에서 창대한 민족, 국가가 있었으나 창대함은 결과이며, 창대함 그 자체가 복의 본질이나 목적이 아니다.
+				그리스도인이 복을 창대함이나 번영으로만 간주하는 그릇된 인식을 고쳐야 하며, 만약 창대함 자체를 목적으로 삼는다면 하나님과의 신앙을 잃었거나 잃어가는 중일 것이다.
+			</p>
+		</section>
+		<!-- 행복 -->
+		<section class="mb-8">
+			<h3 class="text-xl md:text-2xl font-semibold mb-2 text-center">행복</h3>
+			<blockquote class="border-l-4 border-primary pl-4 mb-4 italic">
+				"내가 오늘 네 행복을 위하여 네게 명하는 여호와의 명령과 규례를 지킬 것이 아니냐" (신 10:13)
+			</blockquote>
+			<p class="mb-4 pl-4 leading-relaxed">
+				행복으로 번역된 히브리어 토브 [ טוב ]는 복이라는 뜻이다.
+				하나님께서 주시는 복은 자신의 상황이 어떠하든 더불어 사는 사람들과 관계 속에서 행복을 누리는 것이다.
+			</p>
+			<blockquote class="border-l-4 border-primary pl-4 mb-4 italic">
+				"마른 떡 한 조각만 있고도 화목하는 것이 제육이 집에 가득하고도 다투는 것보다 나으니라" (잠 17:1)
+			</blockquote>
+			<p class="mb-4 pl-4 leading-relaxed">
+				제육에 해당하는 히브리어 제바흐 [ זיבאך ]는 제사의 제물을 뜻하며, 가장 좋은 것의 상징이다.
+				금은보화가 쌓여 있어도 가족이 서로 다투는 것보다 마른 빵 한 조각으로 온 가족이 행복한 것이 하나님께서 주신 복이다.
+			</p>
+		</section>
+		<!-- 선함 · 아름다움 -->
+		<section class="mb-8">
+			<h3 class="text-xl md:text-2xl font-semibold mb-2 text-center">선함 · 아름다움</h3>
+			<blockquote class="border-l-4 border-primary pl-4 mb-4 italic">
+				"여호와께서 이르시되 내가 내 모든 선한 것을 네 앞에 지나가게 하고 여호와의 이름을 네 앞에 선포하리라 나는 은혜 베풀 자에게 은혜를 베풀고 긍휼히 여길 자에게 긍휼을 베푸느니라" (출 33:19)
+			</blockquote>
+			<blockquote class="border-l-4 border-primary pl-4 mb-4 italic">
+				"에브라임은 마치 길들인 암소 같아서 곡식 밟기를 좋아하나 내가 그의 아름다운 목에 멍에를 메우고 에브라임 위에 사람을 태우리니 유다가 밭을 갈고 야곱이 흙덩이를 깨뜨리리라" (호 10:11)
+			</blockquote>
+			<p class="mb-4 pl-4 leading-relaxed">
+				히브리어 투브 [ טוב ]는 복을 뜻하며, 각각 선함과 아름다움으로 번역되었다.
+				하나님의 자녀는 외모와는 상관없이 선하고 아름다운 마음을 지니며, 그 삶으로 드러난다.
+				스스로 주변 사람들의 선하고 아름다운 생각과 마음을 살피며, 하나님께서 주시는 복으로 변화되어 가는지 확인해야 한다.
+				또한, 자신의 삶이 주변 사람들에게 긍정적 영향을 주고 있는지를 살펴보아야 한다. 이는 성령님의 역사하심으로 나타난다.
+			</p>
+		</section>
+		<!-- 바른길 (正道) -->
+		<section class="mb-8">
+			<h3 class="text-xl md:text-2xl font-semibold mb-2 text-center">바른길 (正道)</h3>
+			<blockquote class="border-l-4 border-primary pl-4 mb-4 italic">
+				"내 아들아 너는 듣고 지혜를 얻어 네 마음을 바른 길로 인도할지니라" (잠 23:19)
+			</blockquote>
+			<p class="mb-4 pl-4 leading-relaxed">
+				히브리어 데레크 [ דרק ]도 복과 관련된 단어로, 복은 모든 일에서 정도를 걷는 것이다.
+				만약 스스로 정도를 걷지 않았음에도 창대함과 번영이 주어졌다면, 그것은 하나님께서 주신 복이 아니다.
+				불의하게 얻은 창대함과 번영은 반드시 하나님 앞에서 심판의 대상이 된다.
+				하나님께 복을 받은 사람은 정도를 걷고도 열매를 맺는다.
+			</p>
+		</section>
+		<!-- 하나님 앞에 무릎 꿇다 · 가까이 나아가다 -->
+		<section>
+			<h3 class="text-xl md:text-2xl font-semibold mb-2 text-center">하나님 앞에 무릎 꿇다 · 하나님께 가까이 나아가다</h3>
+			<blockquote class="border-l-4 border-primary pl-4 mb-4 italic">
+				"솔로몬이 일찍이 놋으로 대를 만들었으니 길이가 다섯 규빗이요 너비가 다섯 규빗이요 높이가 세 규빗이라 뜰 가운데에 두었더니 그가 그 위에 서서 이스라엘의 모든 회중 앞에서 무릎을 꿇고 하늘을 향하여
+				손을 펴고" (대하 6:13)
+			</blockquote>
+			<p class="mb-4 pl-4 leading-relaxed">
+				히브리어 바라크/복은 매 순간 하나님 앞에 무릎을 꿇고, 하나님께 가까이 나아가는 것을 의미한다.
+				하나님의 복을 받은 사람은 시간이 갈수록 하나님과 더 가까워지며, 나이가 들수록 하나님께 무릎 꿇는다.
+			</p>
+			<blockquote class="border-l-4 border-primary pl-4 mb-4 italic">
+				"내가 두 가지 일을 주께 구하였사오니 내가 죽기 전에 내게 거절하지 마시옵소서"<br>
+				"곧 헛된 것과 거짓말을 내게서 멀리 하옵시며 나를 가난하게도 마옵시고 부하게도 마옵시고 오직 필요한 양식으로 나를 먹이시옵소서"<br>
+				"혹 내가 배불러서 하나님을 모른다 여호와가 누구냐 할까 하오며 혹 내가 가난하여 도둑질하고 내 하나님의 이름을 욕되게 할까 두려워함이니이다" (잠 3:7-9)
+			</blockquote>
+			<p class="mb-4 pl-4 leading-relaxed">
+				아굴의 기도는 우리가 어떤 기도를 드려야 하는지, 진실하게 살며 필요한 것만으로 자족하게 해달라는 간절한 기도를 상기시켜준다.
+			</p>
+			<blockquote class="border-l-4 border-primary pl-4 mb-4 italic">
+				"세월을 아끼라 때가 악하니라" (엡 5:16)
+			</blockquote>
+			<p class="mb-4 pl-4 leading-relaxed">
+				'세월을 아끼라'는 헬라어 엑사고라조 [ ἐξαγοράζω ] 는 '건져 올리다'라는 의미이다.
+				업적이나 물질적인 것을 이루었다 하더라도, 평생 욕망을 좇아 진리로 건져 올린 시간이 없으면 헛되다.
+				세상을 떠날 때는 물질적인 것은 모두 두고 가야 하고 오직 진리로 건져 올린 시간, 즉 하나님의 자녀답게 산 삶만이 남는다.
+			</p>
+			<h4 class="text-xl md:text-2xl font-semibold mb-2 text-center">
+				정도를 걷고, 하나님 앞에 무릎을 꿇으며, 진리를 좇아 선하고 아름답게 하나님께 나아가는 사람이 복되다.
+			</h4>
+		</section>
+	</div>
+
+	<!-- 카드: 아브라함에게 임한 복 -->
+	<div class="card bg-base-100 shadow-xl rounded-lg p-6">
+		<h2 class="text-2xl md:text-3xl font-semibold mb-6 border-b pb-2 text-center">아브라함에게 임한 복</h2>
+		<p class="mb-4 pl-4 leading-relaxed">
+			믿음의 조상이자 복의 근원으로 불리는 아브라함에게 주어진 복.
+		</p>
+		<blockquote class="border-l-4 border-primary pl-4 mb-4 italic">
+			"여호와께서 아브람에게 이르시되 너는 너의 고향과 친척과 아버지의 집을 떠나 내가 네게 보여 줄 땅으로 가라" <br>
+			"내가 너로 큰 민족을 이루고 네게 복을 주어 네 이름을 창대하게 하리니 너는 복이 될지라" <br>
+			"너를 축복하는 자에게는 내가 복을 내리고 너를 저주하는 자에게는 내가 저주하는 자에게는 내가 저주하리니 땅의 모든 족속이 너로 말미암아 복을 얻을 것이라 하신지라" (창 12:1-4)
+		</blockquote>
+		<p class="mb-4 pl-4 leading-relaxed">
+			아브라함이 받은 첫 번째 복은 하나님의 말씀을 듣는 복이었다.
+			그에게 하나님의 말씀이 들렸고, 아브라함은 여호와의 말씀에 순종하여 나아갔다.
+			그와 함께 갔던 조카 롯은 여호와가 아닌 삼촌인 아브라함, 곧 인간을 따라갔고 결국 소돔과 고모라에서 패망하고 말았다.
+			아브라함은 하나님의 말씀을 삶으로 듣는 복된 귀를 지녔다. 복된 귀를 지녔다는 것은 하나님의 말씀을 삶으로 듣는 것이다.
+		</p>
+		<div id="imageContainer" class="overflow-hidden transition-all duration-300 max-h-0 opacity-0">
+			<img src="./pic1.png" alt="성 마태오를 부르심 - 카라바조 작" class="w-full mb-4">
+		</div>
+		<button id="toggleImageBtn" class="btn btn-primary mb-4" onclick="toggleImage()">본문 참조 - <성 마태오를 부르심 : 카라바조></button>
+		<blockquote class="border-l-4 border-primary pl-4 mb-4 italic">
+			"여호와께서 아브람에게 나타나 이르시되 내가 이 땅을 네 자손에게 주리라 하신지라 자기에게 나타나신 여호와께 그가 그 곳에서 제단을 쌓고" <br>
+			"거기서 벧엘 동쪽 산으로 옮겨 장막을 치니 서쪽은 벧엘이요 동쪽은 아이라 그가 그 곳에서 여호와께 제단을 쌓고 여호와의 이름을 부르더니" (창 12:7-8)
+		</blockquote>
+		<p class="mb-4 pl-4 leading-relaxed">
+			아브라함은 가는 곳마다 여호와 하나님께 제단을 쌓으며 예배드렸다.
+			이는 오늘날 하나님께 예배드리는 행위, 즉 하나님 앞에 무릎 꿇고 경배하는 행위로 해석할 수 있다.
+			복의 문자적 의미 중 '하나님 앞에 무릎 꿇다'가 이를 잘 나타내며, 아브라함은 그러한 복을 입은 사람이었다.
+		</p>
+		<h4 class="text-xl md:text-2xl font-semibold mb-2 text-center">하나님께서는 아브라함에게 큰 민족을 이루고 이름을 창대하게 해주리라 약속하셨지만, 그의 생에는 이루지 못하였다. 그가 살아 생전에 누린 복은 모두 영적인 복이었다. 그리고 그
+			결과로 그는 창대한 믿음의 조상이 되었다. <br>전 세계 모든 그리스도인들의 믿음의 조상이 된 것이 증거이며, 아브라함은 복의 근원이다.
+		</h4>
+	</div>
+
+	<!-- 카드: 예수님께서 말씀하신 '복 있는 사람' -->
+	<div class="card bg-base-100 shadow-xl rounded-lg p-6">
+		<h2 class="text-2xl md:text-3xl font-semibold mb-6 border-b pb-2 text-center">예수님께서 말씀하신 '복 있는 사람'
+			<button class="btn btn-xs sm:btn-sm btn-outline ml-2" onclick="toggleVerse('beatitudes')">말씀 보기</button>
+		</h2>
+		<blockquote class="border-l-4 border-primary pl-4 mb-4 italic beatitudes fade fade-hidden">
+			"예수께서 무리를 보시고 산에 올라가 앉으시니 제자들이 나아온지라" <br>
+			"입을 열어 가르쳐 이르시되" <br>
+			"심령이 가난한 자는 복이 있나니 천국이 그들의 것임이요" <br>
+			"애통하는 자는 복이 있나니 그들이 위로를 받을 것임이요" <br>
+			"온유한 자는 복이 있나니 그들이 땅을 기업으로 받을 것임이요" <br>
+			"의에 주리고 목마른 자는 복이 있나니 그들이 배부를 것임이요" <br>
+			"긍휼히 여기는 자는 복이 있나니 그들이 긍휼히 여김을 받을 것임이요" <br>
+			"마음이 청결한 자는 복이 있나니 그들이 하나님을 볼 것임이요" <br>
+			"화평하게 하는 자는 복이 있나니 그들이 하나님의 아들이라 일컬음을 받을 것임이요" <br>
+			"의를 위하여 박해를 받은 자는 복이 있나니 천국이 그들의 것임이라" (마 5:1-10)
+		</blockquote>
+		<p class="mb-4 pl-4 leading-relaxed">
+			예수님의 체계적인 설교인 산상수훈의 첫 부분은 팔복에 대한 설교이다.
+			첫 주제는 복이었으며, 복이 중요한 것과 동시에, 당시 사람들의 복에 대한 그릇된 인식을 바로잡기 위해 주제로 삼으셨다.
+		</p>
+		<ul class="list-disc list-inside space-y-4">
+			<li>
+				<strong>심령이 가난한 자 : <span class="italic">천국이 그들의 것임</span> </strong>
+				<p class="mb-4 pl-4 leading-relaxed">
+					헬라어 원문의 문장을 살려 번역하면 "복된 사람은 심령이 가난한 사람이며, 그 이유는 천국이 그들의 것이기 때문이다."
+					가난한 심령은 자신의 능력이나 소유를 의지하지 않는 마음을 뜻한다.
+					누가복음에는 '심령'이라는 단어가 생략되어 있다.
+				</p>
+				<blockquote class="border-l-4 border-primary pl-4 mb-4 italic">
+					"예수께서 눈을 들어 제자들을 보시고 이르시되 너희 가난한 자는 복이 있나니 하나님의 나라가 너희 것임이요" (눅 6:20)
+				</blockquote>
+				<p class="mb-4 pl-4 leading-relaxed">
+					그 이유는 두 복음서가 대상으로 하는 독자가 다르기 때문입니다.
+					마태복음은 물질적으로 가난한 유대인을, 누가복음은 이미 많은 것을 소유한 자와 대비하여 오직 하나님만을 믿을 수 있는 가난한 자를 언급한다.
+					'심령이 가난한 자'는 자기에게 절망한 사람으로, 빈부를 떠나 자신을 신봉하지 않는 사람이다.
+					이런 사람만이 하나님을 온전히 신뢰할 수 있는 복된 사람이다.
+				</p>
+			</li>
+			<li>
+				<strong>애통하는 자 : <span class="italic">위로를 받을 것임</span> </strong>
+				<p class="mb-4 pl-4 leading-relaxed">
+					애통은 가슴이 찢어질 정도로 비통하게 우는 것을 의미한다.
+					예수님은 나사로의 죽음 앞(요한복음 11:35), 예루살렘을 보실 때(눅 19:41-44), 겟세마네 동산에서(히브리서 5:7, 마태 26:36-46) 세 번 애통하셨다.
+					예수님이 애통하실 때 하나님께서는 예수님의 심령을 위로로 채워주셨다.
+					애통은 하나님의 위로를 담는 은총의 그릇이다.
+				</p>
+			</li>
+			<li>
+				<strong>온유한 자 : <span class="italic">땅을 기업으로 받을 것임</span> </strong>
+				<p class="mb-4 pl-4 leading-relaxed">
+					'온유'에 해당하는 헬라어 프라우테스 [ πραΰτης ] 는 야생동물의 품성을 일컫는 단어다.
+					야생동물은 거칠다. 조련된 야생동물은 거친 품성은 그대로 가지고 있지만 자신이 아니라 주인을 위해 사용한다.
+					온유는 우유부단함이 아니라 주인을 위해 부드럽지만 때로는 폭풍처럼 거친 성품을 의미한다.
+					예수님은 부드러우시면서도, 성전에서 장사꾼들을 내쫓으실 때에는 폭풍과 같이 단호하셨다.
+					성경에서 직접적으로 온유하다고 표현한 인물은 예수님과 모세이다.
+					예수님과 모세 모두 실제 물리적인 땅을 받지는 못했다.
+					이는 땅으로 번역된 헬라어 게 [ γῆ ] 는 '나라' 혹은 '세상' 뜻하기도 하다.
+					온유한 사람에게 이 세상을 얻을 권리를 상속해 주신다.
+					주님안에서 온유한 사람으로 살면 생전에 물질적인 땅을 얻지 못해도, 생후에 오히려 세상을 얻을 것이다.
+				</p>
+			</li>
+			<li>
+				<strong>의에 주리고 목마른 자 : <span class="italic">배부를 것임</span> </strong>
+				<p class="mb-4 pl-4 leading-relaxed">
+					진정으로 살아있음을 느끼는 증거는 배고픔과 갈증을 느끼는 것에 있다.
+					의에 주리고 목마른 자는 영적으로 살아있음을 증명하며, 그들에 의해 하나님의 나라가 이 땅에 이루어진다.
+					'의'는 하나님과의 바른 관계를 의미하며, 하나님의 말씀을 사랑하는 삶을 뜻한다.
+					육체의 배부름이 아니라 영혼의 흡족함을 통해 진정한 행복을 누리는 것이 복있는 자다.
+				</p>
+			</li>
+			<li>
+				<strong>긍휼히 여기는 자 : <span class="italic">긍휼히 여김을 받을 것임</span> </strong>
+				<p class="mb-4 pl-4 leading-relaxed">
+					'긍휼히 여기다'는 단순한 감정이 아니라 헬라어 동사 엘레에오 [ ἐλεέω ] 에서 알 수 있듯 구체적인 행동을 의미한다.
+					지속적인 긍휼은 하나님 안에서 누리는 부요함 덕분에 가능하며,
+					하나님께서 먼저 긍휼을 베푸셨기에 우리도 그 긍휼을 행할 수 있다.
+					긍휼을 베푸는 사람이 긍휼을 받는다는 예수님의 말씀처럼, 긍휼을 베푸는 사람이 복이 있다.
+				</p>
+			</li>
+			<li>
+				<strong>마음이 청결한 자 : <span class="italic">하나님을 볼 것임</span> </strong>
+				<p class="mb-4 pl-4 leading-relaxed">
+					마음의 청결은 하나님의 청결하심이 자신의 마음을 통해 드러나게 하는 사람이다.
+					자신의 영혼의 초점을 하니님께 맞추면, 하나님의 거룩하심과 순결하심이 자신의 마음과 삶을 통해 드러나게 된다.
+				</p>
+			</li>
+			<li>
+				<strong>화평하게 하는 자 : <span class="italic">하나님의 아들이라 일컬음을 받을 것임</span> </strong>
+				<p class="mb-4 pl-4 leading-relaxed">
+					화평을 뜻하는 헬라어 에이레네 [ εἰρήνη ]는 '평화', '평안'을 의미하기도 한다.
+					예수님은 화평하게 하는 사람, 즉 평화를 실행하는 사람이 복이 있다고 말씀하셨다.
+					누군가와 화평을 이루기 위해 자기를 비우고 버리는 사람은 복된 사람이다.
+					그런 사람이 '하나님의 자녀라 일컬음을 받을 것' 이기 때문이다.
+				</p>
+			</li>
+			<li>
+				<strong>의를 위하여 박해를 받은 자 : <span class="italic">천국이 그들의 것임</span> </strong>
+				<p class="mb-4 pl-4 leading-relaxed">
+					헬라어로 해석하면, 과거나 현재에 관계없이 의를 위해 계속 박해받는 사람이 복되다는 뜻이다.
+					현대에도 하나님의 의를 좇아 바른 신앙양심으로 살려하면 어떤 형태로든 불이익을 당하게 된다. 이것을 감내하는 사람은 복이 있다.
+					'천국이 그들의 것' 이기 때문이다.
+				</p>
+			</li>
+		</ul>
+	</div>
+
+	<!-- 카드: 결론 -->
+	<div class="card bg-base-100 shadow-xl rounded-lg p-6">
+		<h2 class="text-2xl md:text-3xl font-semibold mb-6 border-b pb-2 text-center">결론</h2>
+		<ul class="list-decimal list-inside mb-4 space-y-2">
+			<li><strong>예수님께서 셜교하신 여덟 가지 복은 모두 하나님과의 관계에 대한 복이다.</strong></li>
+			<p class="mb-4">
+				물질적이거나 이 세상의 것을 목표로 하는 것이 아닌, 영원한 천국의 삶을 목적으로 삼아야 한다.
+			</p>
+			<li><strong>그러므로 하나님의 말씀을 좇고 하나님께 가까이 나아가는 사람이 복된 사람이다.</strong></li>
+			<blockquote class="border-l-4 border-primary pl-4 mb-4 italic">
+				"예수께서 이르시되 오히려 하나님의 말씀을 듣고 지키는 자가 복이 있느니라 하시니라" (눅 11:28)
+			</blockquote>
+			<li><strong>하나님께 가까이 나아가지 않을 수 없도록 하나님께서 내게 주신 가시가 복이다.</strong></li>
+			<p class="mb-4">
+				사도 바울은 육체의 가시를 가지고 살았는데, 이것을 그가 가진 지병을 뜻한다.
+				주님께 그 가시를 제거해 주시기를 세 번이나 간절히 기도드렸지만 끝내 응답 받지 못하였다.
+				그러나 그 가시 덕분에 바울은 필평생 육체의 연약함 속에서도 자기 교만에 빠지지 않고, 언제나 하나님만 의지하면서 하나님께 더욱 가까이 나아갈 수 있었다.
+				이 가시야말로 바울을 영원한 사도로 세워 준 하나님의 복이었다.
+			</p>
+		</ul>
+	</div>
+
+	<!-- 맨 위로 이동 버튼 -->
+	<button id="scroll-to-top"
+					class="fixed top-1/2 right-4 md:right-8 lg:right-16 transform -translate-y-[100%] z-50 bg-primary text-white p-3 rounded-full shadow-lg opacity-0 pointer-events-none transition-opacity duration-300"
+					onclick="scrollToTop()" aria-label="맨 위로 이동">
+		<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+			<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+		</svg>
+	</button>
+
+	<!-- 맨 아래 이동 버튼 -->
+	<button id="scroll-to-bottom"
+					class="fixed top-1/2 right-4 md:right-8 lg:right-16 transform translate-y-[100%] z-50 bg-primary text-white p-3 rounded-full shadow-lg opacity-0 pointer-events-none transition-opacity duration-300"
+					onclick="scrollToBottom()" aria-label="맨 아래로 이동">
+		<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+			<!-- 현재는 맨 위로 이동과 동일한 svg 코드 사용; 필요에 따라 아이콘 교체 가능 -->
+			<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+		</svg>
+	</button>
+</div>
+
+<script>
+	// 다크 모드 및 라이트 모드 전환 스크립트
+	function toggleTheme() {
+		const html = document.documentElement;
+		html.dataset.theme = (html.dataset.theme === 'bumblebee') ? 'night' : 'bumblebee';
+	}
+
+	function toggleVerse(className) {
+		const elements = document.getElementsByClassName(className);
+		const button = event.currentTarget;
+		const isHidden = elements[0].classList.contains('fade-hidden');
+		button.setAttribute('aria-expanded', !isHidden);
+		for (const element of elements) {
+			element.classList.toggle('fade-hidden');
+			element.classList.toggle('mb-4');
+		}
+	}
+
+	function toggleImage() {
+		const container = document.getElementById("imageContainer");
+		const btn = document.getElementById("toggleImageBtn");
+
+		if (container.classList.contains("opacity-0")) {
+			// 이미지 보이기: 컨테이너의 scrollHeight 값을 읽어 max-height로 지정
+			container.style.maxHeight = container.scrollHeight + "px";
+			container.classList.remove("opacity-0");
+			container.classList.add("opacity-100");
+			btn.textContent = "숨김";
+		} else {
+			// 이미지 숨기기:
+			// 우선 현재 높이를 max-height로 고정하고(전환 준비)
+			container.style.maxHeight = container.scrollHeight + "px";
+			// 강제로 reflow 시켜줌
+			container.offsetHeight;
+			// opacity와 max-height를 0으로 전환
+			container.classList.remove("opacity-100");
+			container.classList.add("opacity-0");
+			container.style.maxHeight = "0";
+			btn.textContent = "본문 참조 - <성 마태오를 부르심 : 카라바조>";
+		}
+	}
+
+	let hideTopTimer = null;
+	let hideBottomTimer = null;
+
+	window.addEventListener('scroll', function() {
+		const scrollToTopBtn = document.getElementById('scroll-to-top');
+		const scrollToBottomBtn = document.getElementById('scroll-to-bottom');
+
+		const scrollPosition = window.scrollY || window.pageYOffset;
+		const doc = document.documentElement;
+		const maxScroll = doc.scrollHeight - doc.clientHeight;
+
+		// --- 맨 위로 이동 버튼: 전체 스크롤 영역의 30%를 넘으면 표시 ---
+		const topThreshold = maxScroll * 0.30;
+		if (scrollPosition > topThreshold) {
+			scrollToTopBtn.classList.remove('opacity-0', 'pointer-events-none');
+			scrollToTopBtn.classList.add('opacity-50');
+			if (hideTopTimer) clearTimeout(hideTopTimer);
+			hideTopTimer = setTimeout(() => {
+				scrollToTopBtn.classList.remove('opacity-50');
+				scrollToTopBtn.classList.add('opacity-0', 'pointer-events-none');
+			}, 1500);
+		} else {
+			scrollToTopBtn.classList.remove('opacity-50');
+			scrollToTopBtn.classList.add('opacity-0', 'pointer-events-none');
+			if (hideTopTimer) {
+				clearTimeout(hideTopTimer);
+				hideTopTimer = null;
+			}
+		}
+
+		// --- 맨 아래로 이동 버튼: 사용자가 하단에 있지 않으면 표시 ---
+		// 하단에 가까운지 판별 (50px 이내면 "하단에 있다"로 간주)
+		const bottomTolerance = 50; // px 단위
+		if (scrollPosition + window.innerHeight < doc.scrollHeight - bottomTolerance) {
+			scrollToBottomBtn.classList.remove('opacity-0', 'pointer-events-none');
+			scrollToBottomBtn.classList.add('opacity-50');
+			if (hideBottomTimer) clearTimeout(hideBottomTimer);
+			hideBottomTimer = setTimeout(() => {
+				scrollToBottomBtn.classList.remove('opacity-50');
+				scrollToBottomBtn.classList.add('opacity-0', 'pointer-events-none');
+			}, 1500);
+		} else {
+			scrollToBottomBtn.classList.remove('opacity-50');
+			scrollToBottomBtn.classList.add('opacity-0', 'pointer-events-none');
+			if (hideBottomTimer) {
+				clearTimeout(hideBottomTimer);
+				hideBottomTimer = null;
+			}
+		}
+	});
+
+	function scrollToTop() {
+		window.scrollTo({
+			top: 0,
+			behavior: 'smooth'
+		});
+	}
+
+	function scrollToBottom() {
+		window.scrollTo({
+			top: document.documentElement.scrollHeight,
+			behavior: 'smooth'
+		});
+	}
+</script>
+</body>
+</html>
