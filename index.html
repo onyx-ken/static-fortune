@@ -33,6 +33,25 @@
             margin-bottom: 0 !important;
             padding-bottom: 0 !important;
         }
+
+        /* fullscreen 클래스: 전체 화면을 덮으며 중앙 정렬 */
+         .fullscreen {
+             position: fixed;
+             top: 0;
+             left: 0;
+             width: 100vw;
+             height: 100vh;
+             background: rgba(0, 0, 0, 0.8);
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             z-index: 9999;
+         }
+        /* fullscreen 상태에서 이미지의 최대 크기 지정 */
+        .fullscreen img {
+            max-width: 80%;
+            max-height: 80%;
+        }
     </style>
 </head>
 
@@ -188,7 +207,7 @@
             아브라함은 하나님의 말씀을 삶으로 듣는 복된 귀를 지녔다.
         </p>
         <div id="imageContainer" class="overflow-hidden transition-all duration-300 max-h-0 opacity-0">
-            <img src="https://github.com/onyx-ken/static-fortune/blob/main/pic1.jpg?raw=true" alt="성 마태를 부르심 - 카라바조 작" class="w-full mb-4">
+            <img src="https://github.com/onyx-ken/static-fortune/blob/main/pic1.jpg?raw=true" alt="성 마태를 부르심 - 카라바조 작" class="w-full mb-4 cursor-pointer">
         </div>
         <button id="toggleImageBtn" class="btn btn-primary mb-4" onclick="toggleImage()">본문 참조 - <성 마태를 부르심 : 카라바조></button>
         <blockquote class="border-l-4 border-primary pl-4 mb-4 italic">
@@ -488,6 +507,12 @@
             behavior: 'smooth'
         });
     }
+
+    const imageContainer = document.getElementById('imageContainer');
+    imageContainer.addEventListener('click', function() {
+        // fullscreen 클래스 토글: 클릭 시 전체 화면 모드로, 다시 클릭하면 원래대로
+        this.classList.toggle('fullscreen');
+    });
 </script>
 </body>
 </html>
